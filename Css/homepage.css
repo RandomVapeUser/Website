@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.unlink {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Barra de Navegação */
+#navbar {
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+#nav-border {
+    margin-right: 10em;
+    margin-left: 10em;
+    border-bottom: 2px solid #cfcfcf;
+    margin-top: 8px;
+}
+
+/* Barra de Pesquisa */
+.searchbar {
+    position: relative;
+    display: inline-block;
+    margin-left: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 2px;
+}
+
+/* Foco do Input */
+.searchbar:hover {
+    border-color: rgb(219, 219, 219);
+    animation: 20s linear slide-in,;
+}
+
+.searchbar:focus-within {
+    outline: 2px solid rgb(174, 210, 255);
+    border-spacing: 0px;
+    border-color: rgb(79, 161, 255);
+    outline-width: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.searchbar input {
+    font-family: inherit;
+    height: 40px;
+    width: 600px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding-left: 1.25em;
+    padding-right: 4em;
+    border: none;
+    border-radius: 7px;
+}
+
+.searchbar input::placeholder {
+    font-style: italic;
+}
+
+.searchbar input::after {
+    border: 0;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar button {
+    position: absolute;
+    height: 42px;
+    width: 50px;
+    right: 7px;
+    bottom: 1px;
+    background: url(../Assets/search.png);
+    background-size: 24px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 0;
+}
+
+/* Login e Cesto */
+.header-items {
+    display: flex;
+    font-family: inherit;
+    margin-left: auto;
+    align-items: right;
+}
+
+.header-items a {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: center;
+    border: 4px solid white;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.header-items span {
+    padding-left: 5px;
+} 
+
+.header-items a:hover {
+    border-color: rgb(219, 219, 219);
+}
+
+.header-items img {
+    width: 50px;
+    height: 50px;
+}
+
+.lista-navegacao {
+    height: 35px;
+    box-shadow: 0 3px 2px -2px gray;
+}
+
+.lista-navegacao ul li {
+    text-align: center;
+    margin-right: 100px;
+}
+
+.lista-navegacao ul li:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+#login {
+    margin-right: 25px;
+}
+
+#cesto img {
+    scale: 0.9;
+    height: 50px;
+    width: 70px;
+}
+
+#cesto {
+    margin-right: 50px;
+}
+
+/* Icon do Logo */
+#logo {
+    height: 35px;
+    width: 150px;
+    float: left;
+    padding-left: 100px;
+}
