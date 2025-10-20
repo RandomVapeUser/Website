@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    font-family: "Gotham Ssm", Arial, Helvetica, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -118,28 +118,67 @@ body {
     height: 50px;
 }
 
+/* Lista de Navegação */
 .lista-navegacao {
     height: 35px;
     box-shadow: 0 3px 2px -2px gray;
 }
 
+.lista-navegacao ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
 .lista-navegacao ul li {
-    text-align: center;
     margin-right: 100px;
 }
 
 .lista-navegacao ul li:hover {
-    padding-bottom: 5px;
     border-bottom: 2px solid black;
 }
 
+/* Secção de Novidades */
+.novidades {
+    font-family: inherit;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.novidades h2 {
+    margin-bottom: 7px;
+}
+
+.novidades ul {
+    list-style: none;
+}
+
+.novidades ul li {
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    padding: 20px;
+    border-radius: 7%;
+    margin-right: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.novidades ul li img {
+    padding-top: 10px;
+    width: 150px;
+    
+}
+
+
+/* Ids */
 #login {
     margin-right: 25px;
 }
 
 #cesto img {
     scale: 0.9;
-    height: 50px;
+    height: px;
     width: 70px;
 }
 
@@ -147,7 +186,13 @@ body {
     margin-right: 50px;
 }
 
-/* Icon do Logo */
+#nborder {
+    width: 13%;
+    border-bottom: 2px solid #727272;   
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
 #logo {
     height: 35px;
     width: 150px;
