@@ -200,6 +200,15 @@ body {
     border: none;
     border-radius: 9999px;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.novidades ul li button:before {
+    transition: all 0.5s ease;
+}
+
+.novidades ul li button:hover {
+    transform: scale(1.07);
 }
 
 .novidades ul li img {
@@ -208,14 +217,30 @@ body {
 }
 
 .footer {
-    position: absolute; 
     width: 100%;
     height: 50px;
-    text-align: center;
+    position: absolute;
+    display: inline;
+    font-size: 14px;
     color: white;
-    background-color: #181828;
     bottom: 0;
+    background-color: #181828;
     border-top: 1px solid black;
+}
+
+.footer div p {
+    width: 350px;
+}
+
+.footer div {
+    display: inline;
+    vertical-align: center;
+    margin-left: 2em;
+}
+
+.footer div div {
+    float: right;
+    margin-right: 2em;
 }
 
 /* Ids */
