@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+
 body {
     font-family: "Gotham Ssm", Arial, Helvetica, Tahoma, sans-serif;
     margin: 0px;
@@ -119,7 +121,7 @@ body {
     height: 50px;
 }
 
-/* Lista de Navegação */
+/* Nav Bar */
 .lista-navegacao {
     height: 35px;
     box-shadow: 0 3px 2px -2px gray;
@@ -153,16 +155,37 @@ body {
 }
 
 .tcomputadores ul li {
-    font-family: "Open Sans";
     margin-right: 20px;
 }
 
-.tcomputadores ul li img {
-    height: 80px;
-    scale: 1.2;
+.tcomputadores ul li a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 130px;
+    scale: 0.9;
+    text-align: center;
+    transition: 0.1s;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
 }
 
-.tcomputadores ul li p {
+.tcomputadores ul li a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 5px;
+}
+
+.tcomputadores ul li a img {
+    display: inline-block;
+    max-height: 90%; 
+    max-width: 90%;
+}
+
+.tcomputadores ul li a p {
+    position: relative;
+    bottom: 25px;
+    font-size: 15px;
+    margin-bottom: 202px;
     text-align: center;
 }
 
@@ -206,6 +229,12 @@ body {
 }
 
 /* Ids */
+#titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 #login {
     margin-right: 25px;
 }
