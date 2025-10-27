@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bobas+Neue&display=swap');
+
 
 body {
     font-family: "Gotham Ssm", Arial, Helvetica, Tahoma, sans-serif;
@@ -123,8 +124,10 @@ body {
 
 /* Lista de Navegação */
 .lista-navegacao {
+    position: relative;
     height: 35px;
-    box-shadow: 0 3px 2px -2px gray;
+    z-index: 2;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 .lista-navegacao ul {
@@ -140,6 +143,44 @@ body {
 
 .lista-navegacao ul li:hover {
     border-bottom: 2px solid black;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    font-family: "Bobas Neue", "Bebas Neue", Arial, sans-serif;
+    height: 200px;
+    width: 900px;
+    z-index: 1;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #2364b1;
+}
+
+.banner span {
+    color:#fff;
+    font-size: 18px;
+    font-weight:40;
+    letter-spacing:.03125rem;
+    line-height:.875rem;
+    padding-block:.25rem;
+    padding-inline:.5rem;
+    text-align:center;
+    text-transform:uppercase
+}
+
+.banner img {
+    display: flex;
+    height: 80%;
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 30px;
 }
 
 /* Secção de Novidades */
