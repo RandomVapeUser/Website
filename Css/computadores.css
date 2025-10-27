@@ -140,6 +140,55 @@ body {
     border-bottom: 2px solid black;
 }
 
+.tcomputadores {
+    margin-top: 40px;
+}
+
+.tcomputadores ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.tcomputadores ul li {
+    font-family: "Open Sans";
+    margin-right: 20px;
+}
+
+.tcomputadores ul li img {
+    height: 80px;
+    scale: 1.2;
+}
+
+
+.footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    display: inline;
+    vertical-align: middle;
+    font-size: 14px;
+    color: white;
+    bottom: 0;
+    background-color: #181828;
+    border-top: 1px solid black;
+}
+
+.footer div p {
+    width: 350px;
+}
+
+.footer div {
+    display: inline;
+    vertical-align: center;
+    margin-left: 2em;
+}
+
+.footer div div {
+    float: right;
+    margin-right: 2em;
+}
 
 /* Ids */
 #login {
