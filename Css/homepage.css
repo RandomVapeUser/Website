@@ -147,14 +147,13 @@ body {
 
 /* Banner */
 .banner {
+    font-family: "Bobas Neue", "Bebas Neue", Arial, sans-serif;
     position: relative;
     display: flex;
     margin: 0 auto;
     align-items: center;
-    font-family: "Bobas Neue", "Bebas Neue", Arial, sans-serif;
     height: 200px;
     width: 900px;
-    z-index: 1;
     color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -164,23 +163,24 @@ body {
 }
 
 .banner span {
+    width: 800px;
     color:#fff;
     font-size: 18px;
     font-weight:40;
     letter-spacing:.03125rem;
     line-height:.875rem;
-    padding-block:.25rem;
-    padding-inline:.5rem;
     text-align:center;
+    margin-bottom: 0px;
     text-transform:uppercase
 }
 
 .banner img {
     display: flex;
-    height: 80%;
-    width: 40%;
+    height: 165px;
+    width: 400px;
     border-radius: 15px;
     margin-left: 30px;
+    margin-right: 10px;
 }
 
 /* Secção de Novidades */
@@ -202,9 +202,9 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 170px;
-    height: 330px;
+    height: 320px;
     padding: 18px;
-    border-radius: 5%;
+    border-radius: 10px;
     margin-right: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
     transition: 0.3s;
@@ -218,30 +218,32 @@ body {
 .novidades ul li h4 {
     text-align: left;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 
 .novidades ul li p {
     text-align: justify;
-    height: 100px;
+    height: 92px;
+    margin-top: 8px;
     overflow: hidden;
-    display: block;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
     color: #000;
 }
 
 .novidades ul li button {
     font-size: 11px;
     color: white;
-    background-color: blue;
-    text-transform: uppercase;
     width: 120px;
     height: 35px;
-    margin-inline-start: 0;
+    cursor: pointer;
     border: none;
     border-radius: 9999px;
-    cursor: pointer;
+    background-color: blue;
+    margin-inline-start: 0;
+    text-transform: uppercase;
     transition: all 0.5s ease;
 }
 
@@ -261,12 +263,10 @@ body {
 .footer {
     width: 100%;
     height: 50px;
-    position: absolute;
     display: flex;
     align-items: center;
     font-size: 14px;
     color: white;
-    bottom: 0;
     background-color: #181828;
     border-top: 1px solid black;
 }
@@ -286,18 +286,26 @@ body {
 .footer div div {
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 280px;
     margin-left: auto;
-    margin-right: 1em;
+    margin-right: ;
 }
 
 .footer div div a {
-    margin-right: 5px;
+    margin-right: 3px;
 }
-
 /* Ids */
 #login {
     margin-right: 25px;
+}
+
+#bh {
+    font-size: 23px;
+    font-weight: 400;    
+}
+
+#pspan {
+    font-size: 14px; 
 }
 
 #cesto img {

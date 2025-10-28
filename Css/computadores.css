@@ -6,6 +6,10 @@ body {
     padding: 0px;
 }
 
+.main {
+    flex: 1;
+}
+
 .unlink {
     color: inherit;
     text-decoration: none;
@@ -169,10 +173,12 @@ body {
     transition: 0.1s;
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
+    transition: all 0.2s ease;
 }
 
 .tcomputadores ul li a:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 5px;
+    transform: scale(1.03);
 }
 
 .tcomputadores ul li a img {
@@ -198,19 +204,18 @@ body {
 .filtro div {
     display: inline;
 }
+
 .filtro ul {
 }
+
 /* Footer */
 .footer {
     width: 100%;
     height: 50px;
-    position: absolute;
     display: flex;
     align-items: center;
-    
     font-size: 14px;
     color: white;
-    bottom: 0;
     background-color: #181828;
     border-top: 1px solid black;
 }
