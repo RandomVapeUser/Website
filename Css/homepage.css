@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bobas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    font-family: "Gotham Ssm", Arial, Helvetica, Tahoma, sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -216,6 +216,7 @@ body {
 }
 
 .novidades ul li h4 {
+    color: rgb(243, 57, 57);
     text-align: left;
     font-size: 20px;
     margin-top: 20px;
@@ -281,6 +282,10 @@ body {
     width: 100%;
     align-items: center;
     margin-left: 20px;
+}
+
+.footer div p {
+    width: 360px;
 }
 
 .footer div div {

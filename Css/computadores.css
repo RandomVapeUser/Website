@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Gotham Ssm", Arial, Helvetica, Tahoma, sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -149,6 +151,7 @@ body {
 /* Computer Types */
 .tcomputadores {
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .tcomputadores ul {
@@ -165,29 +168,29 @@ body {
 .tcomputadores ul li a {
     display: block;
     align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 130px;
+    height: 150px;
+    width: 180px;
     scale: 0.9;
     text-align: center;
     transition: 0.1s;
     border-radius: 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
 }
 
 .tcomputadores ul li a:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px 3px;
     transform: scale(1.03);
 }
 
 .tcomputadores ul li a img {
     display: inline-block;
-    max-height: 90%; 
+    max-height: 80%; 
     max-width: 90%;
 }
 
 .tcomputadores ul li a p {
+    font-family: "Montserrat", sans-serif;
     position: relative;
     bottom: 25px;
     font-size: 15px;
@@ -199,13 +202,35 @@ body {
     display: inline-block;
     height: 800px;
     width: 400px;
-    border-right: 2px solid black;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-right: 2px solid rgb(154, 154, 154);
 }
+
 .filtro div {
     display: inline;
 }
 
 .filtro ul {
+    list-style: none;
+}
+
+.filtro ul li h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin-bottom: 10px;
+}
+
+.fchoices li input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Footer */
@@ -247,8 +272,19 @@ body {
 /* Ids */
 #titulo {
     display: flex;
+    font-family: "Montserrat", sans-serif;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+#sbreak {
+    border-block-start-color: white;
+    border-block-start-style:dashed;
+    color: white;
+    background-color: white;
+    block-size: 0.5rem;
+    box-shadow: 0 .5rem .5rem #0000001a;
+    position: relative;
 }
 
 #login {
