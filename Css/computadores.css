@@ -40,7 +40,6 @@ body {
 /* Foco do Input */
 .searchbar:hover {
     border-color: rgb(219, 219, 219);
-    animation: 20s linear slide-in,;
 }
 
 .searchbar:focus-within {
@@ -67,10 +66,6 @@ body {
     font-style: italic;
 }
 
-.searchbar input::after {
-    border: 0;
-}
-
 .searchbar input:focus {
     outline: none;
 }
@@ -94,7 +89,6 @@ body {
     display: flex;
     font-family: inherit;
     margin-left: auto;
-    align-items: right;
 }
 
 .header-items a {
@@ -185,7 +179,6 @@ body {
     width: 180px;
     scale: 0.9;
     text-align: center;
-    transition: 0.1s;
     border-radius: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
@@ -225,10 +218,6 @@ body {
     border-right: 2px solid rgb(154, 154, 154);
 }
 
-.filtro div {
-    display: inline;
-}
-
 .filtro ul {
     list-style: none;
     list-style-position: inside;
@@ -242,7 +231,6 @@ body {
     margin-bottom: 10px;
     margin-left: 3px;
     padding-top: 20px;
-    border-top: none;
     position: relative;
 }
 
@@ -282,7 +270,6 @@ body {
 }
 
 .fchoices li input:checked {
-    background-position: center center;
     border-color: blue;
     background-color: blue;
     background-size: 50%;
@@ -305,7 +292,6 @@ body {
 .fchoices li input[type="checkbox"]:checked {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
-
 
 .fchoices li label {
     margin-left: 7px;
@@ -333,9 +319,8 @@ body {
 .laptops ul li a {
     display: flex;
     width: 100%;
-    height: 100%;
-    border-top: 1px solid gray;
-    border-bottom: : 1px solid gray;
+    border-top: 1px solid black;
+    text-decoration: none;
 }
 
 .laptops ul li a img {
@@ -350,14 +335,36 @@ body {
     width: 320px;
 }
 
-.rtexto {
+.rdescricao {
     font-size: 15px;
     color: black;
 }
 
-.rtexto p {
-    margin: 0;
+.rdescricao p {
+    position: relative;
+    font-style: italic;
     color: gray;
+    line-height: 1.2;
+    top: -15px;
+}
+
+.rdescricao img {
+    position: relative;
+    height: 20px !important;
+    width: 80px;
+    top: -30px;
+    right: 3px;
+    margin-right: 2px;
+}
+
+.rdescricao span {
+    position: relative;
+    height: 20px !important;
+    font-size: 13px;
+    color: rgb(67, 67, 67);
+    width: 80px;
+    top: -34px;
+    right: 3px;
 }
 
 /* Footer */
@@ -370,10 +377,6 @@ body {
     color: white;
     background-color: #181828;
     border-top: 1px solid black;
-}
-
-.footer div p {
-    width: 350px;
 }
 
 .footer div {
@@ -397,10 +400,6 @@ body {
 
 .footer div div a {
     margin-right: 3px;
-}
-
-.checkbox-round:checked {
-    background-color: gray;
 }
 
 /* Ids */
@@ -427,7 +426,6 @@ body {
 
 #cesto img {
     scale: 0.9;
-    height: px;
     width: 70px;
 }
 
