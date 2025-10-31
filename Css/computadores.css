@@ -217,15 +217,10 @@ body {
 }
 
 .filtro {
-    display: inline-block;
     width: 400px;
     margin-top: 50px;
     padding-right: 70px;
     border-right: 2px solid rgb(154, 154, 154);
-}
-
-.filtro div {
-    display: inline;
 }
 
 .filtro ul {
@@ -331,96 +326,146 @@ body {
     box-sizing: content-box;
 }
 
-.laptops ul li a {
+.laptops > ul > li > div {
     display: flex;
     width: 100%;
     height: 100%;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
     text-decoration: none;
-}
-
-.laptops ul li a img {
-    height: 200px;
-    margin-left: 50px;
 }
 
 .rimage {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 320px;
+    width: 350px;
+}
+
+.rimage img {
+    width: 230px;
 }
 
 /* Descrição dos computadors */
 .rdescricao {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
     font-size: 15px;
     color: black;
     box-sizing: content-box;
 }
 
+.rdescricao button {
+    max-width: 100%;
+    box-sizing: border-box;
+    float: right;
+}
+
 .rdescricao h1 {
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
-.rdescricao p {
+.rdescricao h1:hover {
+    text-decoration: underline;    
+}
+
+.rdescricao > p {
     position: relative;
     font-style: italic;
+    font-size: 14px;
     color: gray;
+    width: 150px;
     line-height: 1.2;
-    top: -15px;
+    top: -12px;
+    margin-bottom: 0;
 }
 
-.rdescricao img, span, h2{
+.rdescricao img, span {
     position: relative;
-    height: 20px !important;
-    margin-left: 0 !important;
+    top: -13px;
+    vertical-align: middle;
 }
+
 .rdescricao img {
     width: 80px;
-    top: -30px;
-    right: 3px;
     margin-right: 2px;
+    display: inline-block;
 }
 
 .rdescricao span {
-    font-size: 13px;
+    display: inline-block;
+    font-size: 14px;
     color: rgb(67, 67, 67);
-    width: 80px;
-    top: -34px;
-    right: 3px;
 }
 
-.rdescricao div {
-    display: flex;
-    position: relative;
+.rdescricao > div {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    display: inline-block;
     border: 1px solid gray;
-    height: 51%;
-    top: -10px;
+    width: 400px;
+    padding: 10px 0;
+    margin-top: 20px;
+    vertical-align: top;
+    left: 0;
+    top: 110px;
 }
 
-.rdescricao div ul {
+.rdescricao button[type="button"] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-stretch:condensed;
+    position: relative;
+    color: white;
+    background-color: #007BFF;
+    padding: 12px 40px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: all 0.2s ease;
+    top: 145px;
+}
+
+.rdescricao button[type="button"]:hover {
+    background-color: #145db0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.rdescricao > div > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 0;
     height: 100%;
     width: 100%;
+    list-style: none;
+    padding: 0;
 }
 
 .rdescricao div ul li {
+    display: flex;
+    align-items: center;
     margin: 0;
-    height: 30px;
-    width: 300px;
+    height: 40px;
+    width: 400px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-.rdescricao div ul li p {
-    width: 100px;
-}
 .label {
+    color: gray;
+    font-size: 14px;
+    margin-right: 10px;
 }
 
-.rdescricao
+.spec {
+    font-weight: bold;
+    margin-left: auto;
+}
+
 /* Footer */
 .footer {
     width: 100%;
