@@ -197,22 +197,16 @@ body {
     margin-right: 10px;
 }
 
-/* Secção de Novidades */
-.novidades {
-    font-family: inherit;
-    margin-top: 80px;
-    text-align: center;
-}
-
-.novidades h2 {
+/* Secção de plist */
+.plist h2 {
     margin-bottom: 7px;
 }
 
-.novidades ul {
+.plist ul {
     list-style: none;
 }
 
-.novidades ul li {
+.plist ul li {
     display: inline-block;
     vertical-align: top;
     width: 170px;
@@ -220,16 +214,17 @@ body {
     padding: 18px;
     border-radius: 10px;
     margin-right: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
     transition: 0.3s;
+    text-align: center;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 1px;
 }
 
-.novidades ul li:hover {
+.plist ul li:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 8px 5px;
 }
 
-.novidades ul li h4 {
+.plist ul li h4 {
     color: rgb(243, 57, 57);
     text-align: left;
     font-size: 20px;
@@ -237,18 +232,18 @@ body {
     margin-bottom: 0px;
 }
 
-.novidades ul li p {
+.plist ul li p {
     text-align: justify;
-    height: 92px;
     margin-top: 8px;
-    overflow: hidden;
-    display: -webkit-box;
+    height: 90px;
+    display: -webkit-box;  
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    color: #000;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;  
 }
 
-.novidades ul li button {
+.plist ul li button {
     font-size: 11px;
     color: white;
     width: 120px;
@@ -257,22 +252,104 @@ body {
     border: none;
     border-radius: 9999px;
     background-color: blue;
-    margin-inline-start: 0;
     text-transform: uppercase;
     transition: all 0.5s ease;
 }
 
-.novidades ul li button:before {
+.plist ul li button:before {
     transition: all 0.5s ease;
 }
 
-.novidades ul li button:hover {
+.plist ul li button:hover {
     transform: scale(1.05);
 }
 
-.novidades ul li img {
-    padding-top: 10px;
+.plist ul li img {
     width: 150px;
+}
+
+.novidades {
+    font-family: inherit;
+    margin: 0;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    margin-bottom: 50px;
+}
+
+.produtos h2 {
+    margin-left: 70px;    
+}
+
+.produtos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.produtos ul li {
+    display: inline-block;
+    align-items: center;
+    justify-content: center; 
+}
+
+.produtos ul li p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.produtos ul li h4 span {
+    color: gray;
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 2px;
+}
+
+.produtos > ul > button {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 9999px;
+    border: none;
+    left: 30px;
+    transition: all 0.2s ease;
+}
+
+.produtos ul button:hover {
+    filter: brightness(-100%);
+    cursor: pointer;
+}
+
+
+.produtos img {
+    height: 120px;
+}
+
+/* Reviews */
+.reviews {
+    
+}
+
+.reviews ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews ul li {
+    margin-right: 100px;    
+}
+
+.reviews ul li div img {
+    height: 40px; 
+    border-radius: 9999px;
 }
 
 /* Footer */
@@ -340,7 +417,7 @@ body {
 }
 
 #nborder {
-    width: 13%;
+    width: 330px;
     border-bottom: 2px solid #727272;   
     margin: 0 auto;
     margin-bottom: 50px;
