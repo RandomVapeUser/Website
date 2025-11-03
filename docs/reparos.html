@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Moduct</title>
+        <link rel="icon" type="image/x-icon" href="../Assets/icon.ico">
+        <link href="../Css/reparos.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="navbar">
+                <!-- Logo do Website -->
+                <a href="index.html"><img id="logo" src="../Assets/logo.png" alt="+"></a>
+
+                <!-- Barra de Pesquisa -->
+                <form action="/search" method="GET">
+                    <div class="searchbar">
+                        <input id="search-input" name="query" type="search" aria-label="Campo de Pesquisa" placeholder="Pesquisar...">
+                        <button type="submit" id="search-button" aria-label="Botão de Pesquisa"></button>
+                    </div>
+                </form>
+                
+                <!-- Login e Cesto -->
+                <div class="header-items">
+                    <a id="login" class="unlink" href="/login">
+                        <img src="../Assets/login.png">
+                        <span><strong>A minha conta</strong></span>
+                    </a>
+
+                    <a id="cesto" class="unlink" href="/cesto">
+                        <img id="img_cesto" src="../Assets/basket.png">
+                        <span><strong>Cesto</strong></span>
+                    </a>
+                </div>
+
+            </nav>
+            <div id="nav-border"></div>
+
+            <div class="lista-navegacao">
+                <!-- <img id="nav-list" src="../Assets/nav-list.png"> -->
+                <ul>
+                    <li><a class="unlink" href="computadores.html">Computadores</a></li>
+                    <li><a class="unlink" href="reparos.html">Reparos</a></li>
+                    <li><a class="unlink" href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="titulo">
+                <h1>Reparações</h1>
+                <p>Reparamos o seu equipamento com rapidez e qualidade. 
+                    Seja um computador, telemóvel, consola ou outro dispositivo, a nossa equipa técnica garante um serviço de confiança, 
+                    utilizando peças originais e assegurando total transparência no processo. 
+                    Traga o seu equipamento e volte a usá-lo como novo!
+                </p>
+            </div>
+            
+            <div class="reparacoes">
+                <ul>
+                    <li>
+                        <a class="unlink" href="/telemoveis">
+                            <div>
+                                <img src="../Assets/Reparos/repair_1.png"> 
+                            </div>
+                            <h3>Reparação de Telemóveis</h3>
+                            <button>&gt;</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="unlink"  href="/computadores">
+                            <div>
+                                <img src="../Assets/Reparos/repair_2.png">
+                            </div>
+                            <h3>Reparação de Computadores</h3>
+                            <button>&gt;</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="unlink"  href="/monitores">
+                            <div>
+                                <img src="../Assets/Reparos/repair_3.png">
+                            </div>
+                            <h3>Reparação de Monitores</h3>
+                            <button>&gt;</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="unlink" href="/tablets">
+                            <div>
+                                <img src="../Assets/Reparos/repair_4.png">
+                            </div>
+                            <h3>Reparação de Tablets</h3>
+                            <button>&gt;</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="recomendacoes">
+                <ul>
+                    <li>
+                        <h3>Profissionais Altamente Qualificados</h3>
+                        <p>
+                            Sabemos que o teu tempo é valioso. Por isso, asseguramos um processo de diagnóstico e reparação rápido, 
+                            com comunicação clara a cada etapa — desde a avaliação inicial até à entrega do equipamento totalmente funcional.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Atendimento Rápido e Transparente</h3>
+                        <p>
+                            Oferecemos soluções de suporte tanto em loja como ao domicílio. 
+                            Não importa onde te encontres — os nossos técnicos deslocam-se até ti para efetuar reparações, manutenções ou instalações, com a mesma qualidade e eficiência.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Assistência em Qualquer Local</h3>
+                        <p>
+                            Todos os serviços prestados contam com garantia e acompanhamento pós-reparação. 
+                            Acreditamos na transparência e na satisfação do cliente, por isso asseguramos suporte contínuo.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer-full">
+                <div>
+                    <p>Copyright © 1996 - 2025 MODUCT. All rights reserved.</p>
+                    <div>
+                        <a href="/terms" class="unlink">Termos de Uso</a>
+                        <a href="/privacy" class="unlink">| Política de Privacidade</a>
+                    </div>
+                </div>
+        </footer>
+    </body>
+
+</html>
