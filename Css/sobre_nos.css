@@ -158,10 +158,19 @@ body {
     margin-top: 2px;
 }
 
+/* Sobre Nós */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
 
 /* Footer */
 .footer {
-    position: relative; /* instead of fixed */
     width: 100%;
     height: 50px;
     display: flex;
@@ -170,7 +179,6 @@ body {
     color: white;
     background-color: #181828;
     border-top: 1px solid black;
-    margin-top: 50px; /* optional spacing above */
 }
 
 .footer div p {
@@ -194,11 +202,6 @@ body {
     justify-content: center;
     width: 280px;
     margin-left: auto;
-    margin-right: 10px;
-}
-
-.footer div div a {
-    margin-right: 3px;
 }
 
 /* Ids */
@@ -208,6 +211,16 @@ body {
 
 #cesto {
     margin-right: 50px;
+}
+
+#sbreak {
+    position: relative;
+    border-block-start-color: white;
+    border-block-start-style:dashed;
+    color: white;
+    background-color: white;
+    block-size: 0.5rem;
+    box-shadow: 0 .5rem .5rem #0000001a;
 }
 
 #cesto img {

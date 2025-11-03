@@ -293,7 +293,6 @@ body {
 
 /* Footer */
 .footer {
-    position: relative; /* instead of fixed */
     width: 100%;
     height: 50px;
     display: flex;
@@ -302,7 +301,6 @@ body {
     color: white;
     background-color: #181828;
     border-top: 1px solid black;
-    margin-top: 50px; /* optional spacing above */
 }
 
 .footer div p {
