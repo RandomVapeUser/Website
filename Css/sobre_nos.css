@@ -159,7 +159,6 @@ body {
 }
 
 /* Sobre Nós */
-
 .titulo {
     display: flex;
     justify-content: center;
@@ -168,7 +167,18 @@ body {
     font-weight: 600;
 }
 
+.historia {
+    display: flex;   
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+}
 
+.historia p {
+    text-align: justify;
+    width: 800px;
+    line-break: 10px;
+}
 /* Footer */
 .footer {
     width: 100%;

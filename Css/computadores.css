@@ -226,6 +226,7 @@ body {
 .filtro ul {
     list-style: none;
     list-style-position: inside;
+    user-select: none;
     margin-top: 0;
 }
 
