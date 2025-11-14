@@ -14,7 +14,7 @@ body {
 
 #navbar {
     display: flex;
-    height: 4.625em;
+    height: 4.6em;
     align-items: center;
 }
 
@@ -26,16 +26,16 @@ body {
 #nav-border {
     margin-right: 10em;
     margin-left: 10em;
-    border-bottom: 0.125em solid #cfcfcf;
-    margin-top: 0.03125em;
+    border-bottom: 0.1em solid #cfcfcf;
+    margin-top: 0.1em;
 }
 
 .searchbar {
     position: relative;
     display: flex;
-    border: 0.1875em solid rgb(255, 255, 255);
-    border-radius: 0.4375em;
-    padding: 0.125em;
+    border: 0.2em solid rgb(255, 255, 255);
+    border-radius: 0.4em;
+    padding: 0.1em;
 }
 
 .searchbar:hover {
@@ -43,10 +43,10 @@ body {
 }
 
 .searchbar:focus-within {
-    outline: 0.125em solid rgb(174, 210, 255);
+    outline: 0.1em solid rgb(174, 210, 255);
     border-color: rgb(79, 161, 255);
-    outline-width: 0.1875em;
-    box-shadow: 0 0.125em 0.25em 0 rgba(0,0,0,0.5);
+    outline-width: 0.2em;
+    box-shadow: 0 0.1em 0.2em 0 rgba(0,0,0,0.5);
 }
 
 .searchbar input {
@@ -55,10 +55,10 @@ body {
     height: 3em;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
-    padding-left: 1.25em;
+    padding-left: 1.2em;
     padding-right: 4em;
     border: none;
-    border-radius: 0.4375em;
+    border-radius: 0.4em;
 }
 
 .searchbar input::placeholder {
@@ -71,15 +71,15 @@ body {
 
 .searchbar button {
     position: absolute;
-    height: 2.625em;
-    width: 3.125em;
-    right: 0.4375em;
+    height: 2.6em;
+    width: 3.1em;
+    right: 0.4em;
     background: url(../Assets/search.png);
-    background-size: 1.5em 1.5625em;
+    background-size: 1.5em 1.6em;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    top: 10%;
+    top: 0.6em;
     border: 0;
 }
 
@@ -94,16 +94,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 0.625em;
-    padding-right: 0.625em;
-    border: 0.25em solid white;
-    border-radius: 0.4375em;
+    margin-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.2em solid white;
+    border-radius: 0.4em;
     transition: 0.5s;
 }
 
 .header-items span {
     white-space: nowrap;
-    padding-left: 0.3125em;
+    padding-left: 0.3em;
 }
 
 .header-items a:hover {
@@ -111,13 +111,13 @@ body {
 }
 
 .header-items img {
-    width: 3.125em;
+    width: 3.1em;
     height: 3em;
 }
 
 .lista-navegacao {
-    height: 3.125em;
-    box-shadow: 0 0.1875em 0.125em -0.125em gray;
+    height: 3.1em;
+    box-shadow: 0 0.2em 0.1em -0.1em gray;
 }
 
 .lista-navegacao ul {
@@ -136,25 +136,23 @@ body {
     height: 100%;
     width: 12.5em;
     cursor: pointer;
-    border-bottom: 0.3125em solid white;
+    border-bottom: 0.3em solid white;
     transition: all 0.2s ease;
     box-sizing: border-box;
 }
 
 .lista-navegacao ul li:hover {
-    border-bottom: 0.3125em solid black;
+    border-bottom: 0.3em solid black;
 }
 
 .lista-navegacao ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.125em;
+    margin-top: 0.1em;
     width: 100%;
     height: 100%;
 }
-
-/* Body */
 
 .banner {
     font-family: "Bebas Neue", Arial, sans-serif;
@@ -163,30 +161,29 @@ body {
     margin: 0 auto;
     align-items: center;
     height: 12.5em;
-    width: 56.25em;
+    width: 56.3em;
     color: white;
-    border-bottom-left-radius: 1.25em;
-    border-bottom-right-radius: 1.25em;
+    border-bottom-left-radius: 1.2em;
+    border-bottom-right-radius: 1.2em;
     background-color: #2364b1;
 }
 
 .banner span {
     width: 50em;
     color:#fff;
-    font-size: 1.125em;
+    font-size: 1.1em;
     font-weight: 40;
-    letter-spacing:.03125rem;
-    line-height:.875rem;
+    line-height: 0.9rem;
     text-align:center;
     text-transform:uppercase;
 }
 
 .banner img {
-    height: 10.3125em;
+    height: 10.3em;
     width: 25em;
-    border-radius: 0.9375em;
-    margin-left: 1.875em;
-    margin-right: 0.625em;
+    border-radius: 0.9em;
+    margin-left: 1.9em;
+    margin-right: 0.6em;
 }
 
 .banner div {
@@ -196,7 +193,7 @@ body {
 }
 
 .plist h2 {
-    margin-bottom: 0.4375em;
+    margin-bottom: 0.4em;
 }
 
 .plist ul {
@@ -206,33 +203,33 @@ body {
 .plist ul li {
     display: inline-block;
     vertical-align: top;
-    width: 10.625em;
+    width: 10.6em;
     height: 20em;
-    padding: 1.125em;
-    border-radius: 0.625em;
-    margin-right: 0.9375em;
+    padding: 1.1em;
+    border-radius: 0.6em;
+    margin-right: 0.9em;
     transition: 0.3s;
     text-align: center;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3125em 0.5em 0.0625em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3em 0.5em 0.1em;
 }
 
 .plist ul li:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3125em 0.5em 0.3125em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3em 0.5em 0.3em;
 }
 
 .plist ul li h4 {
     color: rgb(243, 57, 57);
     text-align: left;
-    font-size: 1.25em;
-    margin-top: 1.25em;
+    font-size: 1.3em;
+    margin-top: 1.2em;
     margin-bottom: 0;
 }
 
 .plist ul li p {
     text-align: justify;
     margin-top: 0.5em;
-    height: 5.625em;
+    height: 5.6em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
@@ -241,10 +238,10 @@ body {
 }
 
 .plist ul li button {
-    font-size: 0.6875em;
+    font-size: 0.7em;
     color: white;
     width: 8.5em;
-    height: 3.1875em;
+    height: 3.2em;
     cursor: pointer;
     border: none;
     border-radius: 9999px;
@@ -258,7 +255,7 @@ body {
 }
 
 .plist ul li img {
-    width: 9.375em;
+    width: 9.4em;
 }
 
 .novidades {
@@ -275,7 +272,7 @@ body {
 .produtos {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.125em;
+    margin-bottom: 3.1em;
     margin-left: 3em;
 }
 
@@ -292,24 +289,24 @@ body {
 }
 
 .produtos ul li p {
-    font-size: 0.875em;
+    font-size: 0.9em;
     text-align: left;
 }
 
 .produtos ul li h4 span {
     color: gray;
-    font-size: 0.9375em;
+    font-size: 0.9em;
     text-decoration: line-through;
-    margin-left: 0.125em;
+    margin-left: 0.1em;
 }
 
 .produtos > ul > button {
     position: relative;
-    height: 3.125em;
-    width: 3.125em;
+    height: 3.1em;
+    width: 3.1em;
     border-radius: 9999px;
     border: none;
-    left: 1.875em;
+    left: 1.9em;
     transition: all 0.2s ease;
 }
 
@@ -327,18 +324,18 @@ body {
     display: flex;
     justify-content: center;
     padding: 0;
+    gap: 1.5em;
     margin-bottom: 5em;
 }
 
 .reviews ul li {
     display: flex;
     flex-direction: column;
-    width: 15.625em;
-    padding: 0.625em 1.25em;
-    margin-right: 1.875em;
-    border-radius: 0.625em;
+    width: 15.6em;
+    padding: 0.6em 1.3em;
+    border-radius: 0.6em;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3125em 0.9375em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.3em 0.9em;
 }
 
 .reviews ul li div {
@@ -347,27 +344,27 @@ body {
     position: relative;
     align-items: center;
     width: 100%;
-    height: 3.125em;
+    height: 3.1em;
 }
 
 .reviews > ul > li > img {
     height: 2.5em;
     width: 2.5em;
-    margin-top: 0.625em;
+    margin-top: 0.6em;
     border-radius: 99px;
-    margin-bottom: 0.3125em;
+    margin-bottom: 0.3em;
 }
 
 .reviews > ul > li > div > img {
     display: block;
     width: 5em;
     height: auto;
-    margin-top: 0.25em;
+    margin-top: 0.3em;
 }
 
 .reviews ul li div h4 {
     margin: 0;
-    font-size: 0.875em;
+    font-size: 0.9em;
     font-weight: bold;
 }
 
@@ -377,17 +374,17 @@ body {
     height: 110%;
     margin-top: 0.5em;
     margin-bottom: 0;
-    font-size: 0.875em;
+    font-size: 0.9em;
 }
 
 .footer {
-    height: 3.125em;
+    height: 3.1em;
     display: flex;
     align-items: center;
-    font-size: 0.875em;
+    font-size: 0.9em;
     color: white;
     background-color: #181828;
-    border-top: 0.0625em solid black;
+    border-top: 0.1em solid black;
 }
 
 .footer div {
@@ -395,7 +392,7 @@ body {
     display: flex;
     width: 100%;
     align-items: center;
-    margin-left: 1.25em;
+    margin-left: 1.2em;
 }
 
 .footer div div {
@@ -408,10 +405,8 @@ body {
 }
 
 .footer div div a {
-    margin-right: 0.1875em;
+    margin-right: 0.2em;
 }
-
-/* Ids */
 
 #login {
     margin-right: 0.5em;
@@ -423,16 +418,16 @@ body {
 }
 
 #bh {
-    font-size: 1.4375em;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
 #pspan {
-    font-size: 0.875em;
+    font-size: 0.9em;
 }
 
 #cesto {
-    margin-right: 1.125em;
+    margin-right: 1.1em;
 }
 
 #cesto img {
@@ -441,10 +436,10 @@ body {
 }
 
 #nborder {
-    width: 20.625em;
-    border-bottom: 0.125em solid #727272;
+    width: 20.6em;
+    border-bottom: 0.1em solid #727272;
     margin: 0 auto;
-    margin-bottom: 3.125em;
+    margin-bottom: 3.1em;
 }
 
 #logo {
@@ -452,11 +447,10 @@ body {
 }
 
 #logo img {
-    height: 2.1875em;
-    width: 9.375em;
+    height: 2.2em;
+    width: 9.4em;
 }
 
-/* Telemóveis */
 @media screen and (max-width: 480px) {
 
     .header-items {
@@ -480,24 +474,27 @@ body {
 
     .searchbar {
         order: 3;
-        width: 140%;
-        margin: 0;
-        margin-bottom: 0.8em;
+        width: auto;
         display: flex;
         justify-self: center;
         flex: 1;
+        margin: 0;
+        width: 95%;
+        margin-bottom: 0.8em;
         box-sizing: border-box; 
     }
 
     .searchbar input {
-        width: 90%;
+        width: auto;
+    }
+
+    .searchbar button {
+        top: 0.4em;
     }
 
     .lista-navegacao ul {
         padding: 0 0.5em;
     }
-
-    /* Body */
 
     .banner {
         display: flex;
@@ -534,6 +531,10 @@ body {
         margin-top: 0;
     }
 
+    .produtos {
+        margin-left: 0;
+    }
+
     .produtos ul {
         flex-direction: column;
         align-items: center;
@@ -566,7 +567,7 @@ body {
     .reviews ul li {
         width: 70%;  
         margin: 0;     
-        padding: 1em 1.25em;
+        padding: 1em 1.3em;
         margin-bottom: 1.5em; 
     }
 
@@ -595,12 +596,12 @@ body {
     .footer div div {
         width: 100%;                
         justify-content: center;
-        margin: 0.25em 0;
+        margin: 0.2em 0;
         flex-direction: row;
     }
 
     .footer div div a {
-        margin: 0 0.25em;       
+        margin: 0 0.2em;       
     }
 
     #navbar {
@@ -612,6 +613,7 @@ body {
 
     #navbar form {
         flex-grow: 1;
+        width: 100%;
         margin: 0;
     }
 
@@ -628,8 +630,13 @@ body {
         height: 1.8em;
     }
 
+    #login {
+        margin-right: 0;
+    }
+
     #cesto {
         margin-right: 0.5em;
+        margin-left: 0;
     }
 
     #cesto img {

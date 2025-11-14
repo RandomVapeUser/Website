@@ -15,7 +15,7 @@ body {
 
 #navbar {
     display: flex;
-    height: 4.625em;
+    height: 4.6em;
     align-items: center;
 }
 
@@ -27,16 +27,16 @@ body {
 #nav-border {
     margin-right: 10em;
     margin-left: 10em;
-    border-bottom: 0.125em solid #cfcfcf;
-    margin-top: 0.03125em;
+    border-bottom: 0.1em solid #cfcfcf;
+    margin-top: 0em;
 }
 
 .searchbar {
     position: relative;
     display: flex;
-    border: 0.1875em solid rgb(255, 255, 255);
-    border-radius: 0.4375em;
-    padding: 0.125em;
+    border: 0.2em solid rgb(255, 255, 255);
+    border-radius: 0.4em;
+    padding: 0.1em;
 }
 
 .searchbar:hover {
@@ -44,10 +44,10 @@ body {
 }
 
 .searchbar:focus-within {
-    outline: 0.125em solid rgb(174, 210, 255);
+    outline: 0.1em solid rgb(174, 210, 255);
     border-color: rgb(79, 161, 255);
-    outline-width: 0.1875em;
-    box-shadow: 0 0.125em 0.25em 0 rgba(0,0,0,0.5);
+    outline-width: 0.2em;
+    box-shadow: 0 0.1em 0.3em 0 rgba(0,0,0,0.5);
 }
 
 .searchbar input {
@@ -56,10 +56,10 @@ body {
     height: 3em;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
-    padding-left: 1.25em;
+    padding-left: 1.3em;
     padding-right: 4em;
     border: none;
-    border-radius: 0.4375em;
+    border-radius: 0.4em;
 }
 
 .searchbar input::placeholder {
@@ -72,11 +72,11 @@ body {
 
 .searchbar button {
     position: absolute;
-    height: 2.625em;
-    width: 3.125em;
-    right: 0.4375em;
+    height: 2.6em;
+    width: 3.1em;
+    right: 0.4em;
     background: url(../Assets/search.png);
-    background-size: 1.5em 1.5625em;
+    background-size: 1.5em 1.6em;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -95,16 +95,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 0.625em;
-    padding-right: 0.625em;
-    border: 0.25em solid white;
-    border-radius: 0.4375em;
+    margin-left: 0.6em;
+    padding-right: 0.6em;
+    border: 0.3em solid white;
+    border-radius: 0.4em;
     transition: 0.5s;
 }
 
 .header-items span {
     white-space: nowrap;
-    padding-left: 0.3125em;
+    padding-left: 0.3em;
 }
 
 .header-items a:hover {
@@ -112,13 +112,13 @@ body {
 }
 
 .header-items img {
-    width: 3.125em;
+    width: 3.1em;
     height: 3em;
 }
 
 .lista-navegacao {
-    height: 3.125em;
-    box-shadow: 0 0.1875em 0.125em -0.125em gray;
+    height: 3.1em;
+    box-shadow: 0 0.2em 0.1em -0.1em gray;
 }
 
 .lista-navegacao ul {
@@ -137,20 +137,20 @@ body {
     height: 100%;
     width: 12.5em;
     cursor: pointer;
-    border-bottom: 0.3125em solid white;
+    border-bottom: 0.3em solid white;
     transition: all 0.2s ease;
     box-sizing: border-box;
 }
 
 .lista-navegacao ul li:hover {
-    border-bottom: 0.3125em solid black;
+    border-bottom: 0.3em solid black;
 }
 
 .lista-navegacao ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0.125em;
+    margin-top: 0.1em;
     width: 100%;
     height: 100%;
 }
@@ -237,11 +237,11 @@ body {
 }
 
 .filtro ul li h4::before {
-    content: "";            
-    position: absolute;      
-    top: 0;                   
-    left: 0;                  
-    width: 300px;             
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 300px; 
     height: 1px;
     background-color: black;
 }
@@ -360,7 +360,7 @@ body {
 }
 
 .rdescricao h1:hover {
-    text-decoration: underline;    
+    text-decoration: underline; 
 }
 
 .rdescricao > p {
@@ -505,7 +505,6 @@ body {
     margin-left: auto;
 }
 
-/* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
@@ -613,41 +612,234 @@ body {
     color: white;
     background-color: white;
     block-size: 0.5rem;
-    box-shadow: 0 .5rem .5rem #0000001a;
+    box-shadow: 0 0.5rem 0.5rem #0000001a;
     position: relative;
 }
 
-/* Replaced with CSS1 value */
 #login {
     margin-right: 0.5em;
 }
 
-/* Replaced with CSS1 value */
 #cesto {
-    margin-right: 1.125em;
+    margin-right: 1.1em;
 }
 
-/* Replaced with CSS1 value */
 #cesto img {
     height: 2.8em;
     width: 4em;
 }
 
-/* Replaced with CSS1 value */
 #nborder {
-    width: 20.625em;
-    border-bottom: 0.125em solid #727272;
+    width: 20.6em;
+    border-bottom: 0.1em solid #727272;
     margin: 0 auto;
-    margin-bottom: 3.125em;
+    margin-bottom: 3.1em;
 }
 
-/* Replaced with CSS1 value */
 #logo {
     margin-left: 2em;
 }
 
-/* Same in both CSS1 & CSS2, stays unchanged */
 #logo img {
-    height: 2.1875em;
-    width: 9.375em;
+    height: 2.2em;
+    width: 9.4em;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .header-items {
+        position: absolute;
+        display: flex;
+        align-self: flex-end;
+        top: 0;
+        order: 1;
+        margin: 0;
+    }
+
+    .header-items a {
+        width: 3.8em;
+        padding: 0;
+        margin-top: 0.5em;
+    }
+
+    .header-items span {
+        display: none;
+    }
+
+    .searchbar {
+        order: 3;
+        width: auto;
+        display: flex;
+        justify-self: center;
+        flex: 1;
+        margin: 0;
+        width: 95%;
+        margin-bottom: 0.8em;
+        box-sizing: border-box; 
+    }
+
+    .searchbar input {
+        width: auto;
+    }
+
+    .searchbar button {
+        top: 0.4em;
+    }
+
+    .lista-navegacao ul {
+        padding: 0 0.5em;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 20em;   
+        flex-direction: column; 
+        padding: 1em;      
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto; 
+        margin: 0;    
+        margin-top: 2; 
+    }
+
+    .banner span {
+        width: 100%;      
+        font-size: 1em;
+        margin: 0;    
+    }
+
+    .banner div {
+        margin: 0;
+    }
+
+    .banner div h3 {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+
+    .banner div p {
+        margin-top: 0;
+    }
+
+    .produtos {
+        margin-left: 0;
+    }
+
+    .produtos ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .produtos ul li {
+        margin-bottom: 1.5em;
+    }
+
+    .produtos h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .plist ul {
+        padding: 0;
+    }
+
+    .plist > ul > button {
+        display: none;
+    }
+    
+    .reviews ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .reviews ul li {
+        width: 70%;  
+        margin: 0;     
+        padding: 1em 1.3em;
+        margin-bottom: 1.5em; 
+    }
+
+    .reviews ul li div {
+        width: 100%;     
+    }
+
+    .reviews ul li p {
+        width: 100%;   
+    }
+    
+    .footer {
+        flex-direction: column;    
+        height: auto;      
+        width: auto;        
+        padding: 0.5em 1em;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+
+    .footer div {
+        flex-direction: column;     
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer div div {
+        width: 100%;                
+        justify-content: center;
+        margin: 0.2em 0;
+        flex-direction: row;
+    }
+
+    .footer div div a {
+        margin: 0 0.2em;       
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        flex: 1;
+    }
+
+    #navbar form {
+        flex-grow: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    #logo {
+        order: 2;
+        margin-top: 1.5em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        align-self: flex-start;
+    }
+
+    #logo img {
+        width: 8em;
+        height: 1.8em;
+    }
+
+    #login {
+        margin-right: 0;
+    }
+
+    #cesto {
+        margin-right: 0.5em;
+        margin-left: 0;
+    }
+
+    #cesto img {
+        width: 6em;
+    }
+
+    #nav-border {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
