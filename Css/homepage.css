@@ -14,8 +14,13 @@ body {
 
 #navbar {
     display: flex;
-    height: 5.625em;
+    height: 4.625em;
     align-items: center;
+}
+
+#navbar form {
+    flex-grow: 1;
+    margin-left: 2em;
 }
 
 #nav-border {
@@ -27,8 +32,8 @@ body {
 
 .searchbar {
     position: relative;
-    display: inline-block;
-    margin-left: 6.25em;
+    display: flex;
+    flex: 1 !important;
     border: 0.1875em solid rgb(255, 255, 255);
     border-radius: 0.4375em;
     padding: 0.125em;
@@ -36,22 +41,19 @@ body {
 
 .searchbar:hover {
     border-color: rgb(219, 219, 219);
-    animation: 20s linear slide-in;
 }
 
 .searchbar:focus-within {
     outline: 0.125em solid rgb(174, 210, 255);
-    border-spacing: 0;
     border-color: rgb(79, 161, 255);
     outline-width: 0.1875em;
     box-shadow: 0 0.125em 0.25em 0 rgba(0,0,0,0.5);
 }
 
 .searchbar input {
+    flex: 1;
     position: relative;
-    font-family: inherit;
     height: 3em;
-    width: 45em;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     padding-left: 1.25em;
@@ -62,10 +64,6 @@ body {
 
 .searchbar input::placeholder {
     font-style: italic;
-}
-
-.searchbar input::after {
-    border: 0;
 }
 
 .searchbar input:focus {
@@ -88,8 +86,7 @@ body {
 
 .header-items {
     display: flex;
-    font-family: inherit;
-    margin-left: auto;
+    margin-left: 1em;
     align-items: center;
 }
 
@@ -106,6 +103,7 @@ body {
 }
 
 .header-items span {
+    white-space: nowrap;
     padding-left: 0.3125em;
 }
 
@@ -115,7 +113,7 @@ body {
 
 .header-items img {
     width: 3.125em;
-    height: 3.125em;
+    height: 3em;
 }
 
 .lista-navegacao {
@@ -130,7 +128,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-bottom: 0;
 }
 
 .lista-navegacao ul li {
@@ -153,8 +150,10 @@ body {
     margin-top: 0.125em;
 }
 
+/* Body */
+
 .banner {
-    font-family: "Bobas Neue", "Bebas Neue", Arial, sans-serif;
+    font-family: "Bebas Neue", Arial, sans-serif;
     position: relative;
     display: flex;
     margin: 0 auto;
@@ -164,8 +163,6 @@ body {
     color: white;
     border-bottom-left-radius: 1.25em;
     border-bottom-right-radius: 1.25em;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
     background-color: #2364b1;
 }
 
@@ -177,12 +174,10 @@ body {
     letter-spacing:.03125rem;
     line-height:.875rem;
     text-align:center;
-    margin-bottom: 0;
     text-transform:uppercase;
 }
 
 .banner img {
-    display: flex;
     height: 10.3125em;
     width: 25em;
     border-radius: 0.9375em;
@@ -244,17 +239,13 @@ body {
 .plist ul li button {
     font-size: 0.6875em;
     color: white;
-    width: 7.5em;
-    height: 2.1875em;
+    width: 8.5em;
+    height: 3.1875em;
     cursor: pointer;
     border: none;
     border-radius: 9999px;
     background-color: blue;
     text-transform: uppercase;
-    transition: all 0.5s ease;
-}
-
-.plist ul li button:before {
     transition: all 0.5s ease;
 }
 
@@ -267,33 +258,31 @@ body {
 }
 
 .novidades {
-    font-family: inherit;
     margin: 0;
     margin-top: 5em;
     text-align: center;
     margin-bottom: 5em;
 }
 
+.novidades ul li {
+    margin-bottom: 1em;
+}
+
 .produtos {
     display: flex;
     flex-direction: column;
-    font-family: inherit;
     margin-bottom: 3.125em;
-}
-
-.produtos h2 {
-    margin-left: 4.375em;
+    margin-left: 3em;
 }
 
 .produtos ul {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding-left: 0;
 }
 
 .produtos ul li {
-    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -358,7 +347,6 @@ body {
 }
 
 .reviews > ul > li > img {
-    display: inline-block;
     height: 2.5em;
     width: 2.5em;
     margin-top: 0.625em;
@@ -389,7 +377,6 @@ body {
 }
 
 .footer {
-    width: 100%;
     height: 3.125em;
     display: flex;
     align-items: center;
@@ -397,10 +384,6 @@ body {
     color: white;
     background-color: #181828;
     border-top: 0.0625em solid black;
-}
-
-.footer div p {
-    width: 21.875em;
 }
 
 .footer div {
@@ -416,20 +399,23 @@ body {
     justify-content: center;
     width: 17.5em;
     margin-left: auto;
-    margin-right: 0.625em;
+    margin-right: 2.5em;
+    text-wrap: nowrap;
 }
 
 .footer div div a {
     margin-right: 0.1875em;
 }
 
+/* Ids */
+
 #login {
-    margin-right: 1.5625em;
+    margin-right: 0.5em;
 }
 
 #treviews {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 #bh {
@@ -442,12 +428,12 @@ body {
 }
 
 #cesto {
-    margin-right: 3.125em;
+    margin-right: 1.125em;
 }
 
 #cesto img {
-    scale: 0.9;
-    width: 4.375em;
+    height: 2.8em;
+    width: 4em;
 }
 
 #nborder {
@@ -458,17 +444,197 @@ body {
 }
 
 #logo {
-    height: 2.1875em;
-    width: 9.375em;
-    float: left;
-    padding-left: 6.25em;
+    margin-left: 2em;
 }
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .gfg-div {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: #fff;
-  }
+#logo img {
+    height: 2.1875em;
+    width: 9.375em;
+}
+
+/* Telemóveis */
+@media screen and (max-width: 480px) {
+
+    .footer {
+        white-space: nowrap;
+    }
+
+    .header-items {
+        position: absolute;
+        display: flex;
+        align-self: flex-end;
+        top: 0;
+        order: 1;
+        margin: 0;
+    }
+
+    .header-items a {
+        width: 3.8em;
+        padding: 0;
+        margin-top: 0.5em;
+    }
+
+    .header-items span {
+        display: none;
+    }
+
+    .searchbar {
+        order: 3;
+        width: 140%;
+        margin: 0;
+        margin-bottom: 0.8em;
+        display: flex;
+        justify-self: center;
+        flex: 1;
+        box-sizing: border-box; 
+    }
+
+    .searchbar input {
+        width: 90%;
+    }
+
+    .lista-navegacao ul {
+        padding: 0 0.5em;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 20em;   
+        flex-direction: column; 
+        padding: 1em;      
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto; 
+        margin: 0;    
+        margin-top: 2; 
+    }
+
+    .banner span {
+        width: 100%;      
+        font-size: 1em;
+        margin: 0;    
+    }
+
+    .banner div {
+        margin: 0;
+    }
+
+    .banner div h3 {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+
+    .banner div p {
+        margin-top: 0;
+    }
+
+    .produtos ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .produtos ul li {
+        margin-bottom: 1.5em;
+    }
+
+    .produtos h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .plist ul {
+        padding: 0;
+    }
+
+    .plist > ul > button {
+        display: none;
+    }
+    
+    .reviews ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .reviews ul li {
+        width: 70%;  
+        margin: 0;     
+        padding: 1em 1.25em;
+        margin-bottom: 1.5em; 
+    }
+
+    .reviews ul li div {
+        width: 100%;     
+    }
+
+    .reviews ul li p {
+        width: 100%;   
+    }
+    
+    .footer {
+        flex-direction: column;    
+        height: auto;              
+        padding: 0.5em 1em;
+        text-align: center;
+    }
+
+    .footer div {
+        flex-direction: column;     
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer div div {
+        width: 100%;                
+        justify-content: center;
+        margin: 0.25em 0;
+        flex-direction: row;
+    }
+
+    .footer div div a {
+        margin: 0 0.25em;       
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        flex: 1;
+    }
+
+    #navbar form {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    #logo {
+        order: 2;
+        margin-top: 1.5em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        align-self: flex-start;
+    }
+
+    #logo img {
+        width: 8em;
+        height: 1.8em;
+    }
+
+    #cesto {
+        margin-right: 0.5em;
+    }
+
+    #cesto img {
+        width: 6em;
+    }
+
+    #nav-border {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }

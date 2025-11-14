@@ -3,8 +3,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .unlink {
@@ -12,62 +12,58 @@ body {
     text-decoration: none;
 }
 
-/* Barra de Navegação */
 #navbar {
     display: flex;
-    height: 90px;
+    height: 4.625em;
     align-items: center;
+}
+
+#navbar form {
+    flex-grow: 1;
+    margin-left: 2em;
 }
 
 #nav-border {
     margin-right: 10em;
     margin-left: 10em;
-    border-bottom: 2px solid #cfcfcf;
-    margin-top: 8px;
+    border-bottom: 0.125em solid #cfcfcf;
+    margin-top: 0.03125em;
 }
 
-/* Barra de Pesquisa */
 .searchbar {
     position: relative;
-    display: inline-block;
-    margin-left: 100px;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 7px;
-    padding: 2px;
+    display: flex;
+    flex: 1 !important;
+    border: 0.1875em solid rgb(255, 255, 255);
+    border-radius: 0.4375em;
+    padding: 0.125em;
 }
 
-/* Foco do Input */
 .searchbar:hover {
     border-color: rgb(219, 219, 219);
-    animation: 20s linear slide-in,;
 }
 
 .searchbar:focus-within {
-    outline: 2px solid rgb(174, 210, 255);
-    border-spacing: 0px;
+    outline: 0.125em solid rgb(174, 210, 255);
     border-color: rgb(79, 161, 255);
-    outline-width: 3px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    outline-width: 0.1875em;
+    box-shadow: 0 0.125em 0.25em 0 rgba(0,0,0,0.5);
 }
 
 .searchbar input {
-    font-family: inherit;
-    height: 40px;
-    width: 600px;
+    flex: 1;
+    position: relative;
+    height: 3em;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     padding-left: 1.25em;
     padding-right: 4em;
     border: none;
-    border-radius: 7px;
+    border-radius: 0.4375em;
 }
 
 .searchbar input::placeholder {
     font-style: italic;
-}
-
-.searchbar input::after {
-    border: 0;
 }
 
 .searchbar input:focus {
@@ -76,56 +72,53 @@ body {
 
 .searchbar button {
     position: absolute;
-    height: 42px;
-    width: 50px;
-    right: 7px;
-    bottom: 1px;
+    height: 2.625em;
+    width: 3.125em;
+    right: 0.4375em;
     background: url(../Assets/search.png);
-    background-size: 24px 25px;
+    background-size: 1.5em 1.5625em;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    top: 10%;
     border: 0;
 }
 
-/* Login e Cesto */
 .header-items {
     display: flex;
-    font-family: inherit;
-    margin-left: auto;
-    align-items: right;
+    margin-left: 1em;
+    align-items: center;
 }
 
 .header-items a {
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
     align-items: center;
-    padding-right: 10px;
     justify-content: center;
-    border: 4px solid white;
-    text-align: center;
-    border-radius: 7px;
+    margin-left: 0.625em;
+    padding-right: 0.625em;
+    border: 0.25em solid white;
+    border-radius: 0.4375em;
     transition: 0.5s;
 }
 
 .header-items span {
-    padding-left: 5px;
-} 
+    white-space: nowrap;
+    padding-left: 0.3125em;
+}
 
 .header-items a:hover {
     border-color: rgb(219, 219, 219);
 }
 
 .header-items img {
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3em;
 }
 
-/* Lista de Navegação */
 .lista-navegacao {
-    height: 50px;
-    box-shadow: 0 3px 2px -2px gray;
+    height: 3.125em;
+    box-shadow: 0 0.1875em 0.125em -0.125em gray;
 }
 
 .lista-navegacao ul {
@@ -135,7 +128,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-bottom: 0;
 }
 
 .lista-navegacao ul li {
@@ -143,20 +135,22 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 200px;
+    width: 12.5em;
     cursor: pointer;
-    border-bottom: 5px solid white;
+    border-bottom: 0.3125em solid white;
     transition: all 0.2s ease;
     box-sizing: border-box;
 }
 
 .lista-navegacao ul li:hover {
-    border-bottom: 5px solid black;
+    border-bottom: 0.3125em solid black;
 }
 
 .lista-navegacao ul li a {
-    margin-top: 2px;
+    margin-top: 0.125em;
 }
+
+/* Body */
 
 /* Sobre Nós */
 .titulo {
@@ -216,11 +210,11 @@ body {
 
 /* Ids */
 #login {
-    margin-right: 25px;
+    margin-right: 0.5em;
 }
 
 #cesto {
-    margin-right: 50px;
+    margin-right: 1.125em;
 }
 
 #sbreak {
@@ -234,21 +228,22 @@ body {
 }
 
 #cesto img {
-    scale: 0.9;
-    height: px;
-    width: 70px;
+    height: 2.8em;
+    width: 4em;
 }
 
 #nborder {
-    width: 330px;
-    border-bottom: 2px solid #727272;   
+    width: 20.625em;
+    border-bottom: 0.125em solid #727272;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
 }
 
 #logo {
-    height: 35px;
-    width: 150px;
-    float: left;
-    padding-left: 100px;
+    margin-left: 2em;
+}
+
+#logo img {
+    height: 2.1875em;
+    width: 9.375em;
 }
